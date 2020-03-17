@@ -1,0 +1,8 @@
+com\jurisdiction\ssm\domain\UserInfo.class
+com\jurisdiction\ssm\domain\Orders.class
+com\jurisdiction\ssm\domain\Role.class
+com\jurisdiction\ssm\domain\Product.class
+com\jurisdiction\ssm\domain\SysLog.class
+com\jurisdiction\ssm\domain\Member.class
+com\jurisdiction\ssm\domain\Permission.class
+com\jurisdiction\ssm\domain\Traveller.class

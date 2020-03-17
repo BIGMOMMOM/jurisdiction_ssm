@@ -1,0 +1,12 @@
+com\jurisdiction\ssm\service\impl\SysLogServiceImpl.class
+com\jurisdiction\ssm\service\impl\RoleServiceImpl.class
+com\jurisdiction\ssm\service\IProductService.class
+com\jurisdiction\ssm\service\IUserService.class
+com\jurisdiction\ssm\service\IOrdersService.class
+com\jurisdiction\ssm\service\impl\OrdersServiceImpl.class
+com\jurisdiction\ssm\service\IPermissionService.class
+com\jurisdiction\ssm\service\impl\ProductServiceImpl.class
+com\jurisdiction\ssm\service\impl\UserServiceImpl.class
+com\jurisdiction\ssm\service\impl\PermissionServiceImpl.class
+com\jurisdiction\ssm\service\ISysLogService.class
+com\jurisdiction\ssm\service\IRoleService.class

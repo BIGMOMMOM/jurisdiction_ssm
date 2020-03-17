@@ -1,0 +1,8 @@
+com\jurisdiction\ssm\dao\IRoleDao.class
+com\jurisdiction\ssm\dao\IOrdersDao.class
+com\jurisdiction\ssm\dao\IPermissionDao.class
+com\jurisdiction\ssm\dao\IProductDao.class
+com\jurisdiction\ssm\dao\ITravellerDao.class
+com\jurisdiction\ssm\dao\IMemberDao.class
+com\jurisdiction\ssm\dao\ISysLogDao.class
+com\jurisdiction\ssm\dao\IUserDao.class

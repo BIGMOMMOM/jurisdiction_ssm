@@ -1,0 +1,7 @@
+com\jurisdiction\ssm\controller\RoleController.class
+com\jurisdiction\ssm\controller\SysLogController.class
+com\jurisdiction\ssm\controller\OrdersController.class
+com\jurisdiction\ssm\controller\LogAop.class
+com\jurisdiction\ssm\controller\ProductController.class
+com\jurisdiction\ssm\controller\UserController.class
+com\jurisdiction\ssm\controller\PermissionController.class
