@@ -47,7 +47,7 @@ public class ProductController {
 
     //根据ID查询详情
     @RequestMapping("/findById.do")
-    public ModelAndView findById(@RequestParam(name = "id", required = true) String productId) throws Exception {
+    public ModelAndView findById(@RequestParam(name = "id") String productId) throws Exception {
         ModelAndView mv = new ModelAndView();
         Product product = productService.findById(productId);
         mv.addObject("product", product);
@@ -57,9 +57,9 @@ public class ProductController {
 
     //产品修改
     @RequestMapping("/updateById.do")
-    public ModelAndView updateById(@RequestParam(name = "id", required = true) String productId) throws Exception {
+    public ModelAndView updateById(@RequestParam(name = "id") String Id) throws Exception {
         ModelAndView mv = new ModelAndView();
-        Product product = productService.findById(productId);
+        Product product = productService.findById(Id);
         mv.addObject("product", product);
         mv.setViewName("product-update");
         return mv;
@@ -69,9 +69,9 @@ public class ProductController {
      * 功能未完成
      */
     @RequestMapping("/update.do")
-    public String updateId(String id) throws Exception {
-        productService.updateById(id);
-        return "redirect:findById.do";
+    public String updateId(@RequestParam(name = "id" , required = true)String product) throws Exception {
+        productService.updateById(product);
+        return "redirect:findAll.do";
     }
 
     //产品的删除

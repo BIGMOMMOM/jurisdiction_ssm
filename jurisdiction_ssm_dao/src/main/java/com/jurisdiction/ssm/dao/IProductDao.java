@@ -23,12 +23,22 @@ public interface IProductDao {
     public Product findById(String id) throws Exception;
 
     //根据id查询数据并修改
+
     /**
      * 未完成的功能
+     * "product.departureTime=#{departureTimeStr,jdbcType=TIMESTAMP},"+
      * */
-    @Update("update  product set productName=#{productName},cityName=#{cityName},departureTime=#{departureTime},productPrice=#{productPrice},productDesc=#{productDesc},productStatus=#{productStatus} where product.id=#{id}")
-    Product updateById(String id) throws Exception;
+    @Update("update product set" +
+            " product.productNum=#{productNum}, " +
+            "product.productName=#{productName}," +
+            "product.cityName=#{cityName}," +
+            "product.productPrice=#{productPrice}," +
+            "product.productDesc=#{productDesc}," +
+            "product.productStatus=#{productStatus} " +
+            " where product.id=#{id}")
+    void updateById(String id) throws Exception;
+
     //删除产品
     @Delete("delete  from  product where product.id=#{id}")
-    void deleteProduct(String id)throws  Exception;
+    void deleteProduct(String id) throws Exception;
 }

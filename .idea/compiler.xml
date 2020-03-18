@@ -7,10 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="jurisdiction_ssm_utils" />
-        <module name="jurisdiction_ssm_domain" />
-        <module name="jurisdiction_ssm_web" />
         <module name="jurisdiction_ssm_service" />
+        <module name="jurisdiction_ssm_web" />
         <module name="jurisdiction_ssm_dao" />
+        <module name="jurisdiction_ssm_domain" />
       </profile>
     </annotationProcessing>
   </component>

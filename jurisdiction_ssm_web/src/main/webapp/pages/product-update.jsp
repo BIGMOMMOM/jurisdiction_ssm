@@ -124,7 +124,7 @@
                                     <i class="fa fa-calendar"></i>
                                 </div>
                                 <input type="text" class="form-control pull-right"
-                                       id="datepicker-a3" name="departureTime" value="<%--${product.departureTimeStr}--%>">
+                                       id="datepicker-a3" name="departureTimeStr" value=" ${product.departureTimeStr}">
                             </div>
                         </div>
                         <div class="col-md-2 title">产品价格</div>
@@ -152,7 +152,7 @@
                 </div>
 
                 <div class="box-tools text-center">
-                    <button type="submit" class="btn bg-maroon">修改</button>
+                    <button type="submit" class="btn bg-maroon" onclick="location.href='${pageContext.request.contextPath}/product/update.do?id=${product.id}'">修改</button>
                     <button type="button" class="btn bg-default"
                             onclick="history.back(-1);">返回
                     </button>
@@ -285,7 +285,7 @@
 
     $(document).ready(function () {
         $('#datepicker-a3').datetimepicker({
-            format: "yyyy-mm-dd hh:ii",
+            format: "yyyy-mm-dd hh:ii:ss",
             autoclose: true,
             todayBtn: true,
             language: "zh-CN"
@@ -296,7 +296,7 @@
         // 激活导航位置
         setSidebarActive("order-manage");
         $("#datepicker-a3").datetimepicker({
-            format: "yyyy-mm-dd hh:ii",
+            format: "yyyy-mm-dd hh:ii:ss",
 
         });
 

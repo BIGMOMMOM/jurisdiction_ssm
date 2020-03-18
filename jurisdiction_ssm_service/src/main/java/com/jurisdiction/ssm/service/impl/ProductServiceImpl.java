@@ -8,7 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 //service的实现类
 @Service
@@ -40,10 +42,11 @@ public class ProductServiceImpl implements IProductService {
         return productDao.findById(id);
     }
 
+
     //修改
     @Override
     public void updateById(String id) throws Exception {
-       productDao.updateById(id);
+    productDao.updateById(id);
     }
 //删除
     @Override
